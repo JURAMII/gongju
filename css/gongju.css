@@ -62,9 +62,6 @@ header{
     height: 100px;
     border-bottom: 1px solid #eee;
 }
-/* nav{
-    padding-right: 150px;
-} */
 nav a{
     display: block;
     height: 100px;
@@ -248,7 +245,37 @@ main{
     padding: 0 10px;
     font-size: 0;
 }
-
+.slide_controll{
+    position: absolute;
+    gap: 2px;
+    z-index: 5;
+    bottom: 6px; right: 233px;
+}
+.slide_controll li{
+    width: 70px; height: 70px;
+    background-color: rgba(0, 0, 0, 0.4);
+}
+.slide_controll li:hover{
+    background-color: black;
+}
+.slide_controll li:nth-child(2){
+    background-color: black;
+}
+.slide_controll li:nth-child(2):hover{
+    background-color: var(--main-red);
+}
+.slide_controll li:nth-child(3){
+    background-color: var(--main-red);
+}
+.slide_controll img{
+    padding-top: 20px;
+    padding-left: 30px;
+}
+.start{
+    display: none;
+    position: absolute;
+    left: 72px;
+}
 .weather{
     align-items: center;
     position: absolute;
